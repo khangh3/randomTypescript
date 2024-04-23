@@ -12,3 +12,29 @@ arr2.push("hei");
 
 // union type
 console.log(arr2);
+
+let obj1: object;
+obj1 = { name: "dsds", age: 30 };
+let obj2: {
+  name: string;
+  age: number;
+  belt: string;
+};
+
+obj2 = { name: "mario", age: 20, belt: "black" };
+let pub: any;
+pub = "donkey";
+
+let hello: string;
+hello = "hello world";
+console.log(hello);
+
+// functions
+
+const func = (a: number, b: number, c?: number) => {
+  console.log(a + b);
+};
+
+// checking how imports are converted
+import s from "./s";
+s();
